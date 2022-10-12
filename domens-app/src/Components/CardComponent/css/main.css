@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v8_58 {
+  width: 941px;
+  height: 638px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.card-button {
+  width: 941px;
+  height: 638px;
+  /*background: url("");*/
+  background-color: #76db9b;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v8_36 {
+  width: 463px;
+  height: 638px;
+  /*background: url("public/images");*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  overflow: hidden;
+}
+.v8_37 {
+  width: 478px;
+  height: 638px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 463px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+.v8_38 {
+  width: 271px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 400px;
+  left: 509px;
+  font-family: Poppins;
+  font-weight: ExtraLight;
+  font-size: 13px;
+  opacity: 1;
+  text-align: left;
+}
+.v8_39 {
+  width: 68px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 334px;
+  left: 509px;
+  font-family: Poppins;
+  font-weight: ExtraLight;
+  font-size: 13px;
+  opacity: 1;
+  text-align: left;
+}
+.v8_40 {
+  width: 146px;
+  height: 54px;
+  /*background: url("./../src/Components/CardComponent/images/v8_40.png");*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 452px;
+  left: 509px;
+  overflow: hidden;
+}
+.price {
+  width: 100px;
+  color: #893f0c;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: Poppins;
+  font-weight: ExtraLight;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+.price_old {
+  width: 37px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 25px;
+  left: 109px;
+  font-family: Poppins;
+  font-weight: ExtraLight;
+  font-size: 13px;
+  opacity: 1;
+  text-align: left;
+}
+.v8_43 {
+  width: 352px;
+  height: 353px;
+  /*background: url("./../src/Components/CardComponent/images/v8_43.png");*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 34px;
+  left: 509px;
+  overflow: hidden;
+}
+.v8_44 {
+  width: 352px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 153px;
+  left: 0px;
+  font-family: Poppins;
+  font-weight: ExtraLight;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.v8_45 {
+  width: 110px;
+  color: rgba(0,0,0,1);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: ABeeZee;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.v8_46 {
+  width: 279px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 57px;
+  left: 0px;
+  font-family: Didot LT Std;
+  font-weight: Bold;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.v8_47 {
+  width: 83px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 333px;
+  left: 0px;
+  font-family: Poppins;
+  font-weight: ExtraLight;
+  font-size: 13px;
+  opacity: 1;
+  text-align: left;
+}
+.v8_48 {
+  width: 289px;
+  height: 48px;
+  /*background: url("../images/v8_48.png");*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 526px;
+  left: 509px;
+  overflow: hidden;
+}
+.v8_49 {
+  width: 289px;
+  height: 48px;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  overflow: hidden;
+}
+.v8_50 {
+  width: 86px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 14px;
+  left: 115px;
+  font-family: Poppins;
+  font-weight: ExtraLight;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.v8_51 {
+  width: 31px;
+  height: 31px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 4px;
+  left: 89px;
+  overflow: hidden;
+}
+.v8_52 {
+  width: 20px;
+  height: 22px;
+  background: rgba(0,0,0,1);
+  opacity: 1;
+  position: absolute;
+  top: 8px;
+  left: 0px;
+}
+.v8_53 {
+  width: 31px;
+  height: 31px;
+  /*  background: url("../images/v8_53.png");*/
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
