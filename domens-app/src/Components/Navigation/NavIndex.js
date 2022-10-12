@@ -3,6 +3,7 @@ import {TabMenu} from 'primereact/tabmenu';
 
 const Navigation = () => {
     const [activeIndex, setActiveIndex] = useState(3);
+
     const items = [
         {
             label: 'Main', icon: 'pi pi-fw pi-home', command: (event) => {
@@ -28,7 +29,14 @@ const Navigation = () => {
             label: 'Yakutyanochka', icon: 'pi pi-fw pi-cog', command: (event) => {
                 window.location.hash = "yakutyanochka";
             }
+        },
+        {
+            label: '404', icon: 'pi pi-fw pi-cog', command: (event) => {
+
+            }
+
         }
+
     ];
 
     const setSelectedTab = (e) => {
