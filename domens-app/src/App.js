@@ -1,5 +1,5 @@
 import React from "react";
-import {Routes, Route, Link} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 
 import "primereact/resources/themes/lara-light-indigo/theme.css"; //theme
 import "primereact/resources/primereact.min.css"; //core css
@@ -11,11 +11,6 @@ import PerleMainPage from "./Pages/perle/PerleMainPage";
 import BargraioniMainPage from "./Pages/bagrationi/BargraioniMainPage";
 import YakutyanochkaMainPage from "./Pages/yakutyanochka/YakutyanochkaMainPage";
 import Navigation from "./Components/Navigation/NavIndex";
-import * as ReactDOM from "react-dom";
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from "react-router-dom";
 
 const punycode = require("punycode");
 
