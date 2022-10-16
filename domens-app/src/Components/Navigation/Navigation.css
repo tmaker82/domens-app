@@ -1,0 +1,24 @@
+.Main_Navigation {
+    width: 100%;
+    height: 30px;
+    color: rgba(58,58,58,1);
+    position: absolute;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+.Menu_Main {
+    left: 20px;
+}
+.Menu_Perle {
+    left: 120px;
+}
+.Menu_Atal {
+    left: 220px;
+}
+.Menu_Bagrationi {
+    left: 320px;
+}
+.Menu_Yakutyanochka {
+    left:520px;
+}

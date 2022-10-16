@@ -24,11 +24,6 @@ const App = () => {
     return (
         <div>
             <Navigation/>
-            <header>
-                {/*<Link to="/">Home</Link>
-                <Link to="/blog">Blog</Link>
-                <Link to="/about">About</Link>*/}
-            </header>
             <main>
                 <Routes>
                     <Route path="/" element={<DefaultMainPage />} />
