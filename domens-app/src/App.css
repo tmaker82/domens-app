@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --color-bg: #2C2C32;
+  --color-active: #FF9999;
+}
+.active {
+  color: var(--color-active);
+  cursor: default;
+}
