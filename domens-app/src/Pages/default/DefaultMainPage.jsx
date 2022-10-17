@@ -11,7 +11,7 @@ const DefaultMainPage = () => {
             {/*<header className="App-header">
                 <Counter/>
             </header>*/}
-            <FitnessTitleComponent></FitnessTitleComponent>
+            {/*<FitnessTitleComponent></FitnessTitleComponent>*/}
 {/*
             <CardComponent></CardComponent>
 */}
