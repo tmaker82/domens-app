@@ -1,27 +1,17 @@
-.Main_Navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    /*background-color: #fefefe;*/
-    position: absolute;
-    font-size: 24px;
-    opacity: 1;
-    text-align: left;
+.discord {
+    background: linear-gradient(to left, var(--bluegray-700) 50%, var(--bluegray-800) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--bluegray-800);
 }
-.Menu_Main {
-    left: 20px;
+.discord:hover {
+    background-position: left bottom;
 }
-.Menu_Perle {
-    left: 120px;
+.discord i {
+    background-color: var(--bluegray-800);
 }
-.Menu_Atal {
-    left: 220px;
-}
-.Menu_Bagrationi {
-    left: 320px;
-}
-.Menu_Yakutyanochka {
-    left:520px;
+.discord:focus {
+    box-shadow: 0 0 0 1px var(--bluegray-500);
 }
