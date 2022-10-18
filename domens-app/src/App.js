@@ -19,7 +19,7 @@ const App = () => {
 
     return (
         <div>
-            <Navigation/>
+           {/* <Navigation/>*/}
             <Routes>
                 <Route path="/" element={<DefaultMainPage/>}/>
                 <Route path="/perle" element={<PerleMainPage/>}/>

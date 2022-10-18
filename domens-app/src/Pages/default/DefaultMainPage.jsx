@@ -3,11 +3,11 @@ import React from "react";
 import {getLocationName} from "../../Service/functions";
 import DomenCardComponent from "../../Components/DomenCard/DomenCardComponent";
 
-const DefaultMainPage = () => {
-    console.log('SITE NAME: ', getLocationName());
+const DefaultMainPage = (props) => {
+    let siteName = getLocationName();
     return (
         <div>
-            <DomenCardComponent></DomenCardComponent>
+            <DomenCardComponent siteName={getLocationName()}></DomenCardComponent>
         </div>
     );
 };
