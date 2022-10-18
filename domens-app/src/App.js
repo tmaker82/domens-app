@@ -8,8 +8,7 @@ import 'primereact/resources/primereact.css';
 import 'primeflex/primeflex.css';
 
 import "./App.css";
-import YakutyanochkaMainPage from "./Pages/yakutyanochka/YakutyanochkaMainPage";
-import Navigation from "./Components/Navigation/NavIndex";
+import BagrationiMainPage from "./Pages/bagrationi/BagrationiMainPage";
 
 const App = () => {
 
@@ -17,7 +16,7 @@ const App = () => {
         <div>
            {/* <Navigation/>*/}
             <Routes>
-                <Route path="/" element={<YakutyanochkaMainPage/>}/>
+                <Route path="/" element={<BagrationiMainPage/>}/>
             </Routes>
         </div>
     );
