@@ -1,8 +1,14 @@
 import React from "react";
-import { Card } from "primereact";
-import "./Footer.css";
 
 const FooterComponent = () => {
-  return <Card className="footer">Сайт находится в разработке</Card>;
+    return (
+        <div className="grid align-content-end">
+            <div className="col-1 text-left"> </div>
+            <div className="col-4 text-center"> </div>
+            <div className="col-2 text-center"> </div>
+            <div className="col-4 text-center"> </div>
+            <div className="col-1 text-right"> </div>
+        </div>
+    );
 };
 export default FooterComponent;

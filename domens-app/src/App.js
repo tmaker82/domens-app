@@ -14,6 +14,7 @@ import PerleMainPage from "./Pages/perle/PerleMainPage";
 import BargraioniMainPage from "./Pages/bagrationi/BargraioniMainPage";
 import YakutyanochkaMainPage from "./Pages/yakutyanochka/YakutyanochkaMainPage";
 import Navigation from "./Components/Navigation/NavIndex";
+import FooterComponent from "./Components/Footer/FooterComponent";
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
                 <Route path="/bagrationi" element={<BargraioniMainPage/>}/>
                 <Route path="/yakutyanochka" element={<YakutyanochkaMainPage/>}/>
             </Routes>
+            <FooterComponent/>
         </div>
     );
 }
