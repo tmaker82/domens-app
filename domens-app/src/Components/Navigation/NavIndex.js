@@ -6,30 +6,26 @@ import './Navigation.css';
 const Navigation = () => {
 
     return (
-        <div className="grid">
-            <div className="flex card-container blue-container overflow-hidden">
+        <div className="card">
+            <div className="flex flex-wrap justify-content-center card-container gap-3">
                 <div
-                    className="flex-none flex align-items-center justify-content-center font-bold text-white m-2 px-5 py-3 border-round">
-                    <Button label={<NavLink to="/" className='Main_Navigation Menu_Main'>Главная</NavLink>} className="p-button-text p-button-secondary p-button-text"/>
+                    className="w-8rem h-2rem text-white font-bold flex align-items-center justify-content-center"><NavLink to="/" >Главная</NavLink>
                 </div>
                 <div
-                    className="flex-none flex align-items-center justify-content-center font-bold text-white m-2 px-5 py-3 border-round">
-                    <Button label={<NavLink to="/perle" className='Main_Navigation Menu_Perle'>Перле</NavLink>} className="p-button-text p-button-secondary p-button-text"/>
+                    className="w-8rem h-2rem text-white font-bold flex align-items-center justify-content-center"> <NavLink to="/perle" >Перле</NavLink>
                 </div>
                 <div
-                    className="flex-none flex align-items-center justify-content-center font-bold text-white m-2 px-5 py-3 border-round">
-                    <Button label={<NavLink to="/atal" className='Main_Navigation Menu_Atal'>Атал</NavLink>} className="p-button-text p-button-secondary p-button-text"/>
+                    className="w-8rem h-2rem text-white font-bold flex align-items-center justify-content-center"><NavLink to="/atal" >Атал</NavLink>
                 </div>
                 <div
-                    className="flex-none flex align-items-center justify-content-center font-bold text-white m-2 px-5 py-3 border-round">
-                    <Button label={<NavLink to="/bagrationi" className='Main_Navigation Menu_Bagrationi'>Багратиони</NavLink>} className="p-button-text p-button-secondary p-button-text"/>
+                    className="w-8rem h-2rem text-white font-bold flex align-items-center justify-content-center"><NavLink to="/bagrationi" >Багратиони</NavLink>
                 </div>
                 <div
-                    className="flex-none flex align-items-center justify-content-center font-bold text-white m-2 px-5 py-3 border-round">
-                    <Button label={<NavLink to="/yakutyanochka" className='Main_Navigation Menu_Yakutyanochka'>Якутяночка</NavLink>} className="p-button-text p-button-secondary p-button-text"/>
+                    className="w-8rem h-2rem text-white font-bold flex align-items-center justify-content-center">{<NavLink to="/yakutyanochka" >Якутяночка</NavLink>}
                 </div>
             </div>
         </div>
+
     );
 }
 
