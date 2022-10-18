@@ -4,7 +4,7 @@ import { Card } from "primereact";
 const MoneyComponent = () => {
   return (
     <Card
-      title="ЯКУТЯНОЧКА.РФ"
+      title="БАГРАТИОНИ.РФ"
       style={{
         marginBottom: "auto",
         width: "90%",

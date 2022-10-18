@@ -6,7 +6,7 @@ const DomenCardComponent = (props) => {
     const siteName = getLocationName();
     console.log('DomenCardComponent siteName', siteName);
     const setButtonClick = () => {
-                window.location.href = 'https://www.reg.ru/domain/shop/lot/якутяночка.рф'
+                window.location.href = 'https://www.reg.ru/domain/shop/lot/багратиони.рф'
     }
 
     return (
@@ -14,7 +14,7 @@ const DomenCardComponent = (props) => {
             <div className="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
                 <section>
                     <span className="block text-6xl font-bold mb-1">Доменное имя продается</span>
-                    <div className="text-6xl text-primary font-bold mb-3">Якутяночка.рф</div>
+                    <div className="text-6xl text-primary font-bold mb-3">БАГРАТИОНИ.рф</div>
                     <p className="mt-0 mb-4 text-700 line-height-3">Вы можете приобрести доменное имя через торговую площадку REG.RU</p>
                     <Button label="Купить" type="button" className="mr-3 p-button-raised"  onClick={(e) => setButtonClick()} />
                 </section>
