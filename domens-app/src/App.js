@@ -8,10 +8,6 @@ import 'primereact/resources/primereact.css';
 import 'primeflex/primeflex.css';
 
 import "./App.css";
-import DefaultMainPage from "./Pages/default/DefaultMainPage";
-import AtalMainPage from "./Pages/atal/AtalMainPage";
-import PerleMainPage from "./Pages/perle/PerleMainPage";
-import BargraioniMainPage from "./Pages/bagrationi/BargraioniMainPage";
 import YakutyanochkaMainPage from "./Pages/yakutyanochka/YakutyanochkaMainPage";
 import Navigation from "./Components/Navigation/NavIndex";
 
@@ -21,11 +17,7 @@ const App = () => {
         <div>
            {/* <Navigation/>*/}
             <Routes>
-                <Route path="/" element={<DefaultMainPage/>}/>
-                <Route path="/perle" element={<PerleMainPage/>}/>
-                <Route path="/atal" element={<AtalMainPage/>}/>
-                <Route path="/bagrationi" element={<BargraioniMainPage/>}/>
-                <Route path="/yakutyanochka" element={<YakutyanochkaMainPage/>}/>
+                <Route path="/" element={<YakutyanochkaMainPage/>}/>
             </Routes>
         </div>
     );
