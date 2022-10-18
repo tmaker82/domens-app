@@ -3,6 +3,13 @@
   <component name="PublishConfigData" serverName="Перле.рф" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
+      <paths name="31.31.196.139">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Атал.рф">
         <serverdata>
           <mappings>
@@ -25,13 +32,6 @@
         </serverdata>
       </paths>
       <paths name="Якутяночка.рф">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="31.31.196.139">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

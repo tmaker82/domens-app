@@ -8,13 +8,17 @@ import 'primereact/resources/primereact.css';
 import 'primeflex/primeflex.css';
 
 import "./App.css";
-import DefaultMainPage from "./Pages/default/DefaultMainPage";
-import AtalMainPage from "./Pages/atal/AtalMainPage";
-import PerleMainPage from "./Pages/perle/PerleMainPage";
-import BargraioniMainPage from "./Pages/bagrationi/BargraioniMainPage";
-import YakutyanochkaMainPage from "./Pages/yakutyanochka/YakutyanochkaMainPage";
+import TourComponent from "./Pages/TourComponent/TourComponent";
+import ContactsComponent from "./Pages/ContactsComponent/ContactsComponent";
+import FeedbackComponent from "./Pages/FeedbackComponent/FeedbackComponent";
+import TeamComponent from "./Pages/TeamComponent/TeamComponent";
+import ServicesComponent from "./Pages/ServicesComponent/ServicesComponent";
+import FAQComponent from "./Pages/FAQComponent/FAQComponent";
+import ActionsComponent from "./Pages/ActionsComponent/ActionsComponent";
+import MainComponent from "./Pages/MainComponent/MainComponent";
 import Navigation from "./Components/Navigation/NavIndex";
 import FooterComponent from "./Components/Footer/FooterComponent";
+import AboutComponent from "./Pages/AboutComponent/AboutComponent";
 
 const App = () => {
 
@@ -22,11 +26,15 @@ const App = () => {
         <div>
             <Navigation/>
             <Routes>
-                <Route path="/" element={<DefaultMainPage/>}/>
-                <Route path="/perle" element={<PerleMainPage/>}/>
-                <Route path="/atal" element={<AtalMainPage/>}/>
-                <Route path="/bagrationi" element={<BargraioniMainPage/>}/>
-                <Route path="/yakutyanochka" element={<YakutyanochkaMainPage/>}/>
+                <Route path="/" element={<MainComponent/>}/>
+                <Route path="/actions" element={<ActionsComponent/>}/>
+                <Route path="/about" element={<AboutComponent/>}/>
+                <Route path="/faq" element={<FAQComponent/>}/>
+                <Route path="/services" element={<ServicesComponent/>}/>
+                <Route path="/team" element={<TeamComponent/>}/>
+                <Route path="/feedback" element={<FeedbackComponent/>}/>
+                <Route path="/contacts" element={<ContactsComponent/>}/>
+                <Route path="/tour" element={<TourComponent/>}/>
             </Routes>
             <FooterComponent/>
         </div>
