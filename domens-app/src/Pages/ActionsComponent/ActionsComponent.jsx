@@ -1,74 +1,64 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import { Carousel } from 'primereact/carousel';
+import { Button } from 'primereact/button';
+import { ProductService } from '../../Service/ProductService';
 
-const ActionsComponent = (props) => {
-  const {siteName} = props;
-  console.log('siteName for Page: ', siteName);
+
+const ActionsComponent = () => {
+  const [products, setProducts] = useState([]);
+  const responsiveOptions = [
+    {
+      breakpoint: '1024px',
+      numVisible: 3,
+      numScroll: 3
+    },
+    {
+      breakpoint: '600px',
+      numVisible: 2,
+      numScroll: 2
+    },
+    {
+      breakpoint: '480px',
+      numVisible: 1,
+      numScroll: 1
+    }
+  ];
+
+  const productService = new ProductService();
+
+  useEffect(() => {
+    productService.getActions().then(data => setProducts(data.slice(0,9)));
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const productTemplate = (product) => {
+    return (
+        <div className="product-item">
+          <div className="product-item-content">
+            <div className="mb-3">
+              <img src={`images/product/${product.image}`} onError={(e) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={product.name} className="product-image" />
+            </div>
+            <div>
+              <h4 className="mb-1">{product.name}</h4>
+              <h6 className="mt-0 mb-3">${product.price}</h6>
+              <span className={`product-badge status-${product.inventoryStatus.toLowerCase()}`}>{product.inventoryStatus}</span>
+              <div className="car-buttons mt-5">
+                <Button icon="pi pi-search" className="p-button p-button-rounded mr-2" />
+                <Button icon="pi pi-star-fill" className="p-button-success p-button-rounded mr-2" />
+                <Button icon="pi pi-cog" className="p-button-help p-button-rounded" />
+              </div>
+            </div>
+          </div>
+        </div>
+    );
+  }
+
   return (
-
-      <div className="grid">
-        <div className="col-12 md:col-6 lg:col-3">
-          <div className="surface-0 shadow-2 p-3 border-1 border-50 border-round">
-            <div className="flex justify-content-between mb-3">
-              <div>
-                <span className="block text-500 font-medium mb-3">Orders</span>
-                <div className="text-900 font-medium text-xl">152</div>
-              </div>
-              <div className="flex align-items-center justify-content-center bg-blue-100 border-round" style={{ width: '2.5rem', height: '2.5rem' }}>
-                <i className="pi pi-shopping-cart text-blue-500 text-xl"></i>
-              </div>
-            </div>
-            <span className="text-green-500 font-medium">24 new </span>
-            <span className="text-500">since last visit</span>
-          </div>
-        </div>
-        <div className="col-12 md:col-6 lg:col-3">
-          <div className="surface-0 shadow-2 p-3 border-1 border-50 border-round">
-            <div className="flex justify-content-between mb-3">
-              <div>
-                <span className="block text-500 font-medium mb-3">Revenue</span>
-                <div className="text-900 font-medium text-xl">$2.100</div>
-              </div>
-              <div className="flex align-items-center justify-content-center bg-orange-100 border-round" style={{ width: '2.5rem', height: '2.5rem' }}>
-                <i className="pi pi-map-marker text-orange-500 text-xl"></i>
-              </div>
-            </div>
-            <span className="text-green-500 font-medium">%52+ </span>
-            <span className="text-500">since last week</span>
-          </div>
-        </div>
-        <div className="col-12 md:col-6 lg:col-3">
-          <div className="surface-0 shadow-2 p-3 border-1 border-50 border-round">
-            <div className="flex justify-content-between mb-3">
-              <div>
-                <span className="block text-500 font-medium mb-3">Customers</span>
-                <div className="text-900 font-medium text-xl">28441</div>
-              </div>
-              <div className="flex align-items-center justify-content-center bg-cyan-100 border-round" style={{ width: '2.5rem', height: '2.5rem' }}>
-                <i className="pi pi-inbox text-cyan-500 text-xl"></i>
-              </div>
-            </div>
-            <span className="text-green-500 font-medium">520  </span>
-            <span className="text-500">newly registered</span>
-          </div>
-        </div>
-        <div className="col-12 md:col-6 lg:col-3">
-          <div className="surface-0 shadow-2 p-3 border-1 border-50 border-round">
-            <div className="flex justify-content-between mb-3">
-              <div>
-                <span className="block text-500 font-medium mb-3">Comments</span>
-                <div className="text-900 font-medium text-xl">152 Unread</div>
-              </div>
-              <div className="flex align-items-center justify-content-center bg-purple-100 border-round" style={{ width: '2.5rem', height: '2.5rem' }}>
-                <i className="pi pi-comment text-purple-500 text-xl"></i>
-              </div>
-            </div>
-            <span className="text-green-500 font-medium">85 </span>
-            <span className="text-500">responded</span>
-          </div>
+      <div className="carousel-demo">
+        <div className="card">
+          <Carousel value={products} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions}
+                    itemTemplate={productTemplate} header={<h5>Basic</h5>} />
         </div>
       </div>
-
   );
-
-};
+}
 export default ActionsComponent;

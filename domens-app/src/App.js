@@ -20,6 +20,7 @@ import Navigation from "./Components/Navigation/NavIndex";
 import FooterComponent from "./Components/Footer/FooterComponent";
 import AboutComponent from "./Pages/AboutComponent/AboutComponent";
 
+
 const App = () => {
 
     return (
