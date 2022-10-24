@@ -1,9 +1,12 @@
 import React from "react";
 import DomenCardComponent from "../../Components/DomenCard/DomenCardComponent";
 
-const YakutyanochkaMainPage = (props) => {
+const AtalMainPage = (props) => {
   const {siteName} = props;
   console.log('siteName for Page: ', siteName);
-  return <DomenCardComponent></DomenCardComponent>;
+  return (
+      <div></div>
+      /*<DomenCardComponent></DomenCardComponent>;*/
+  )
 };
-export default YakutyanochkaMainPage;
+export default AtalMainPage;
